@@ -47,6 +47,7 @@ if(!empty($_POST)) {
     
     // Si tout est ok => en DB
 	if (!$conf->haveError()) {
+           
 		if ($countryObject->saveDB()) {
 			header('Location: country.php?success='.urlencode('Ajout/Modification effectuée').'&cou_id='.$countryObject->getId());
 			exit;

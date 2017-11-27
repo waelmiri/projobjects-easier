@@ -71,7 +71,8 @@ $selectCities = new SelectHelper($citiesList, $cityId, array(
 	'id' => 'cit_id',
 	'class' => 'form-control',
 ));
-
+//echo '<pre>';
+//print_r($cityObject);
 $selectCountries = new SelectHelper($countriesList, $cityObject->getCountry()->getId(), array(
 	'name' => 'cou_id',
 	'id' => 'cou_id',
